@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducateMe - Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        /* Course Button Styles */
+        .add-course-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn-add-course {
+            background-color: #2c3e50; 
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-add-course:hover {
+            background-color: #34495e; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="EducateMe Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course-catalog.html">Courses</a></li>
+                <li><a href="teacher-dashboard.html">Teacher Dashboard</a></li>
+                <li><a href="student-profile.html">Student Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Welcome, Teacher</h1>
+            <p>Here you can manage your courses, assignments, and students.</p>
+            <div class="add-course-button">
+                <a href="add-course.html">
+                    <button class="btn-add-course">Add New Course</button>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Course Management</h2>
+            <div class="container">
+                <div class="course-card">
+                    <img src="images/web.jpg" alt="web course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Introduction to Web Computing</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/assembly.png" alt="Assembly course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Computer Organization & Assembly Language</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/data.png" alt="data structure course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Introduction to Data Structures and Algorithms</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        <section>
+            <h2>Manage Students</h2>
+            <p>Here you can view student progress and give feedback.</p>
+            <div class="student-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Progress</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ahmed said</td>
+                            <td>80%</td>
+                            <td><a href="student-feedback.html">Give Feedback</a></td>
+                        </tr>
+                        <tr>
+                            <td>khalid suliman</td>
+                            <td>75%</td>
+                            <td><a href="student-feedback.html">Give Feedback</a></td>
+                        </tr>
+                        <tr>
+                            <td>alia salim</td>
+                            <td>90%</td>
+                            <td><a href="student-feedback.html">Give Feedback</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Assign Homework</h2>
+            <form action="https://httpbin.org/post" method="POST">
+                <label for="homework-title">Homework Title:</label>
+                <input type="text" id="homework-title" name="homework-title" required="required" />
+
+                <label for="homework-description">Homework Description:</label>
+                <textarea id="homework-description" name="homework-description" required="required"></textarea>
+
+                <button type="submit">Assign Homework</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EducateMe - All Rights Reserved</p>
+        <nav>
+        
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

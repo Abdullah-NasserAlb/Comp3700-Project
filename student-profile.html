@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducateMe - Student Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="EducateMe Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course-catalog.html">Courses</a></li>
+                <li><a href="teacher-dashboard.html">Teacher Dashboard</a></li>
+                <li><a href="student-profile.html">Student Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Your Profile</h1>
+            <p>Welcome, Student! Here is your profile and progress information.</p>
+        </section>
+
+        <section>
+            <h2>Your Courses</h2>
+            <div class="container">
+                <div class="course-card">
+                    <img src="images/web.jpg" alt="web course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Introduction to Web Computing</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/assembly.png" alt="Assembly course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Computer Organization & Assembly Language</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/data.png" alt="data structure course">
+                    <div class="course-info">
+                        <a href="course-detail.html">Introduction to Data Structures and Algorithms</a>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Your Progress</h2>
+            <p>Here is your current progress in each course.</p>
+            <div class="container">
+                <div class="course-card2">
+                    <img src="images/web.jpg" alt="web course">
+                    <div class="course-info">
+                        <h3>Introduction to Web Computing</h3>
+                        <p style="color: green;" >completion: 67% complete</p>
+                    </div>
+                </div>
+                <div class="course-card2">
+                    <img src="images/assembly.png" alt="Assembly course">
+                    <div class="course-info">
+                        <h3>Computer Organization & Assembly Language</h3>
+                        <p style="color: green;">completion: 33% complete</p>
+                    </div>
+                </div>
+                <div class="course-card2">
+                    <img src="images/data.png" alt="data structure course">
+                    <div class="course-info">
+                        <h3>Introduction to Data Structures and Algorithms</h3>
+                        <p style="color: green;">completion: 23% complete</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Update Your Profile</h2>
+            <form action="https://httpbin.org/post" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required="required" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="required" />
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" required="required"></textarea>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EducateMe - All Rights Reserved</p>
+        <nav>
+        
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

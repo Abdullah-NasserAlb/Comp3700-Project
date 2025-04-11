@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducateMe - Add Course</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="EducateMe Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course-catalog.html">Courses</a></li>
+                <li><a href="teacher-dashboard.html">Teacher Dashboard</a></li>
+                <li><a href="student-profile.html">Student Profile</a></li>
+                <li><a href="add-course.html">Add Course</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-course-section">
+            <h1>Add New Course</h1>
+            <form action="#" method="post">
+                <label for="course-title">Course Title:</label>
+                <input type="text" id="course-title" name="course-title" required="required" />
+
+                <label for="course-description">Course Description:</label>
+                <textarea id="course-description" name="course-description" required="required"></textarea>
+
+                <label for="course-image">Course Image URL:</label>
+                <input type="url" id="course-image" name="course-image" placeholder="Enter image URL" required="required" />
+
+                <button type="submit">Submit Course</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EducateMe - All Rights Reserved</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
